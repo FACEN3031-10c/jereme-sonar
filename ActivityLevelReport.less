@@ -1,0 +1,190 @@
+@import '../../assets/style.less';
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#table-wrapper {
+  padding: 0 10vh;
+}
+
+#activity-level-report-header {
+  color: #colors[text-secondary];
+  font-size: 3em;
+  font-weight: bolder;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  text-align: left;
+  padding-top: 20px;
+}
+
+#gen-report-btn {
+  flex-direction: column;
+  width: fit-content;
+  align-self: center;
+  height: 45px;
+  margin: 20px 50px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377);
+}
+
+.cards {
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+#activity-report-content-wrapper {
+  width: 80%;
+  margin: 2vh auto 0 auto;
+}
+
+#container-section-activity {
+  border: 2px solid #5babde;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  background-color: white;
+  text-align: left;
+  padding: 2rem;
+}
+
+.activity-level-return {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.3vh;
+  margin: 20px 50px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 2.5vh;
+  font-weight: 500;
+  color: #colors[text-primary];
+  background-color: #colors[quaternary];
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377);
+}
+
+#activity-level-dropdown {
+  font-size: x-large;
+  color: #262626;
+  font-weight: 500;
+}
+
+#report-menu-item {
+  text-align: right;
+  font-size: large;
+  color: #262626;
+  font-weight: 300;
+}
+
+label {
+  display: inline-block;
+}
+
+
+.filter-btn {
+  background-color: red;
+}
+
+.select {
+  padding: 4px 10px;
+  margin: 2px;
+  background-color: #fff;
+  border-color: grey;
+  border-radius: 10px;
+}
+
+// adds transition animations to the filter dropdown
+.filter-show {
+  width: 80%;
+  height: 0px;
+  margin-left: 10%;
+  border: none;
+  background-color: #colors[secondary];
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  display: block;
+  width: 80%;
+  overflow: hidden;
+}
+
+// opens the filter dropdown
+.filter-show.big {
+  height: 120px; 
+}
+  
+.filter-items {
+    width: 100%;
+    background-color: #colors[tertiary];
+    border-radius: 4px;
+    border: solid 2px;
+    border-color: #colors[secondary];
+    padding: 20px;
+  }
+
+.filter-hide {
+  display: none;
+}
+
+.filter-text {
+  color: #000;
+  margin: 0;
+}
+
+#show-filter-btn {
+  color: #colors[quaternary];
+  display: block;
+  width: 80%;
+  height: 75px;
+  margin-left: 10%;
+  border: none;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+
+
+  font-weight: 10000;
+  font-size: 30px;
+
+  &:hover {
+    color: #colors[quinary];
+    cursor: pointer;
+  }
+}
+
+#activity-report-content-wrapper {
+  margin-top: 0;
+}
+
+.ant-btn.activity-level-submit {
+  background-color: #colors[quaternary];
+  height: fit-content;
+  margin: 8px 0 15px 0;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377);
+
+  &:hover {
+    background-color: #colors[quinary];
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  #activity-level-return {
+    height: 110px;
+  }
+}
